@@ -1,7 +1,7 @@
 CREATE TABLE `sap_product_collection_data`
 (
-            `ObjectID`                 varchar(70) NOT NULL,
-			`ProductID`                varchar(40) DEFAULT NULL,
+			`ProductID`                varchar(40) NOT NULL,
+            `ObjectID`                 varchar(70) DEFAULT NULL,
 			`UUID`                     varchar(80) DEFAULT NULL,
 			`Language`                 varchar(2) DEFAULT NULL,
 			`LanguageText`             varchar(80) DEFAULT NULL,
@@ -25,6 +25,6 @@ CREATE TABLE `sap_product_collection_data`
 			`ExternalID`               varchar(100) DEFAULT NULL,
 			`EntityLastChangedOn`      varchar(80) DEFAULT NULL,
 			`ETag`                     varchar(80) DEFAULT NULL,
-    PRIMARY KEY(`ObjectID`)
+    PRIMARY KEY(`ProductID`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4
