@@ -1,5 +1,5 @@
 # sap-product-sql-c4  
-sap-product-sql-c4 は、主にエッジアプリケーションにおいて、SAPと連携された製品データを保存するSQLテーブルを作成するためのレポジトリです。  
+sap-product-sql-c4 は、主にエッジアプリケーションにおいて、SAPと連携された品目データを保存するSQLテーブルを作成するためのレポジトリです。  
 sap-product-sql-c4 は、そのままクラウド環境におけるアプリケーションにも、適用可能です。
 
 ## 前提条件  
@@ -11,9 +11,9 @@ https://api.sap.com/api/product/overview
 ## sqlの設定ファイル
 sap-product-sql-c4 には、sqlの設定ファイルとして以下のsqlファイルが含まれています。  
 
-* sap-product-collection-data.sql（SAP 品目 - 品目データ）  
-* sap-product-other-descriptions-data.sql（SAP 品目 - その他説明データ）  
-* sap-product-sales-process-information.sql（SAP 品目 - 販売プロセス情報データ）
+* sap-product-sql-c4-product-collection-data.sql（SAP 品目C4 - 品目データ）  
+* sap-product-sql-c4-product-sales-process-information-data.sql（SAP 品目C4 - 品目販売プロセス情報データ）
+* sap-product-sql-c4-product-other-descriptions-data.sql（SAP 品目 - 品目その他説明データ）  
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 MySQLのセットアップ / Kubernetesの設定 / 具体的なSQLテーブルの作成方法、については、[mysql-kube](https://github.com/latonaio/mysql-kube)を参照ください。

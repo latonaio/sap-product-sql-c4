@@ -1,13 +1,13 @@
-CREATE TABLE `sap_product_other_descriptions_data`
+CREATE TABLE `sap_product_c4_product_other_descriptions_data`
 (
+            `ObjectID`         varchar(70) NOT NULL,
 			`ProductID`        varchar(40) NOT NULL,
-            `ObjectID`         varchar(70) DEFAULT NULL,
 			`ParentObjectID`   varchar(70) DEFAULT NULL,
 			`Language`         varchar(2) DEFAULT NULL,
 			`LanguageText`     tinyint(1) DEFAULT NULL,
 			`Description`      varchar(40) DEFAULT NULL,
 			`ETag`             tinyint(1) DEFAULT NULL,
-    PRIMARY KEY(`ProductID`),
-    CONSTRAINT `SAPProductOtherDescriptions_fk` FOREIGN KEY (`ProductID`) REFERENCES `sap_product_collection_data` (`ProductID`)
+    PRIMARY KEY(`ObjectID`, `ProductID`),
+    CONSTRAINT `SAPProductC4ProductOtherDescriptionsData_fk` FOREIGN KEY (`ObjectID`) REFERENCES `sap_product_c4_product_collection_data` (`ObjectID`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4
